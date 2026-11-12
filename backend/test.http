@@ -1,0 +1,60 @@
+### cadastrar funcionario
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+    "nome": "Paula",
+    "email": "paula@gmail.com",
+    "senha": "abc"
+}
+
+
+### cadastrar cliente
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome": "Paula",
+    "cpf": "12345678912"
+}
+
+
+### consultar cliente
+GET http://localhost:3000/cliente/1
+
+
+### apagar cliente
+DELETE http://localhost:3000/cliente/1
+
+### atualizar cliente
+PUT http://localhost:3000/cliente/3
+Content-Type: application/json
+
+{
+    "codCliente": 3,
+    "nome": "a",
+    "cpf": "12345678912"
+}
+
+
+### cadastrar equipamento
+POST http://localhost:3000/equipamento
+Content-Type: application/json
+
+{
+    "modelo": "A0",
+    "fabricante": "Media",
+    "numSerie": "985384923sd",
+    "idCliente": 3
+}
+
+
+### cadastrar inspecao
+POST http://localhost:3000/inspecao
+Content-Type: application/json
+
+{
+    "status": "PENDENTE",
+    "data": "2026-08-29",
+    "idEquipamento": 3
+}
